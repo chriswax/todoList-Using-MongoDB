@@ -1,0 +1,28 @@
+
+
+GET http://localhost:7000/todoList HTTP/1.1
+
+###
+GET http://localhost:7000/todoList/636bf6d91d7db82dcf50b963 HTTP/1.1
+
+###
+POST http://localhost:7000/todoList HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Going to Mid Week Services",
+    "description": "Going to Mid Week Services today by 5pm"  
+}
+
+###
+PUT http://localhost:7000/todoList/636bf6d91d7db82dcf50b963 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Going to Mid Week Services122",
+    "descriptionq": "Going to Mid Week Services today by 5pm123"
+}
+
+###
+DELETE http://localhost:7000/todoList/636bf6d91d7db82dcf50b963 HTTP/1.1
+
